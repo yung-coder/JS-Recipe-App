@@ -148,7 +148,6 @@ async function fetchFavMeals() {
   favoriteContanier.innerHTML = " ";
 
   const mealIds = getMealFromLS();
-  console.log(mealIds);
 
   for (let i = 0; i < mealIds.length; i++) {
     const mealId = mealIds[i];
@@ -159,8 +158,6 @@ async function fetchFavMeals() {
     } catch (error) {
       console.log(error);
     }
-
-    console.log(meals);
   }
 }
 
